@@ -1,0 +1,22 @@
+# Gradle
+# ------
+.gradle
+/build
+
+# Eclipse
+# -------
+*.classpath
+*.project
+*.settings
+/bin
+atlassian-ide-plugin.xml
+
+# OS X
+# ----
+.DS_Store
+
+/target/
+
+.idea
+
+*.iml
