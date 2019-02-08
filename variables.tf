@@ -53,3 +53,7 @@ variable "K8S_HELM_HOME" {
 variable "AKS_SSH_ADMIN_KEY" {
   description = "Admin SSH Public Key for AKS Agent VMs"
 }
+
+variable "agent_count" {
+  default = 1
+}
