@@ -39,7 +39,7 @@ resource "azurerm_kubernetes_cluster" "application" {
   kubernetes_version = "1.11.5"
 
   linux_profile {
-    admin_username = "admin"
+    admin_username = "cxcloud"
     ssh_key {
       key_data = "${var.AKS_SSH_ADMIN_KEY}"
     }
@@ -47,9 +47,9 @@ resource "azurerm_kubernetes_cluster" "application" {
   agent_pool_profile {
     name            = "default"
     count           = "${var.agent_count}"
-    vm_size         = "Standard_D3_v2"
+    vm_size         = "Standard_D1_v2"
     os_type         = "Linux"
-    os_disk_size_gb = 30
+    os_disk_size_gb = 50
   }
   service_principal {
     client_id     = "${azurerm_azuread_application.aks.application_id}"
