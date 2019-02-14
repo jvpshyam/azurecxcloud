@@ -36,7 +36,7 @@ resource "azurerm_kubernetes_cluster" "application" {
   ]
 
   dns_prefix         = "${var.projectname}${var.instance}${var.environment}"
-  kubernetes_version = "1.11.5"
+  kubernetes_version = "1.11.7"
 
   linux_profile {
     admin_username = "cxcloud"
