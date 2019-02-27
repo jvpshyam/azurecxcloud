@@ -50,6 +50,7 @@ resource "helm_release" "cert-manager" {
   chart     = "stable/cert-manager"
   namespace = "kube-system"
   timeout   = 1800
+  version   = "v0.5.2"
   depends_on = [ "helm_release.ingress" ]
 
   set {
@@ -73,7 +74,7 @@ resource "helm_release" "cert-manager" {
 # letsencrypt
 resource "helm_release" "letsencrypt" {
   name      = "letsencrypt"
-  chart     = "${path.root}/charts/letsencrypt/"
+  chart     = "${path.root}/chart/letsencrypt/"
   namespace = "kube-system"
   timeout   = 1800
   depends_on = [ "helm_release.cert-manager" ]
