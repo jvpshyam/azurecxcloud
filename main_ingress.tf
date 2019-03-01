@@ -74,7 +74,7 @@ resource "helm_release" "cert-manager" {
 # letsencrypt
 resource "helm_release" "letsencrypt" {
   name      = "letsencrypt"
-  chart     = "${path.root}/chart/letsencrypt/"
+  chart     = "${path.root}/charts/letsencrypt/"
   namespace = "kube-system"
   timeout   = 1800
   depends_on = [ "helm_release.cert-manager" ]
