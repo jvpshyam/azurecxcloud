@@ -4,7 +4,6 @@ description: Letsencrypt Cluster Issuer
 name: letsencrypt
 version: 1.0.0
 maintainers:
-  - name: Niklas Salmoukas
-    email: nsalmoukas@bright-skies.de
-    url: https://bskies.io/
+  - name: Shyam Jandhyala
+    email: jandhyala.shyam@tieto.com
 kubeVersion: ">=1.9"

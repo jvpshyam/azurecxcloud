@@ -5,7 +5,7 @@ metadata:
 spec:
   acme:
     server: https://acme-v02.api.letsencrypt.org/directory
-    email: devops@bright-skies.de
+    email: jandhyala.shyam@tieto.com
     privateKeySecretRef:
       name: letsencrypt-account-key
     http01: {}
