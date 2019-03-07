@@ -3,12 +3,11 @@ provider "azurerm" { }
 
 # Resource Group
 resource "azurerm_resource_group" "application" {
-  name     = "${var.projectname}-${var.instance}-${var.environment}"
-  location = "${var.region}"
+  name     = "${var.projectname}-${var.environment}"
+  location = "${var.location}"
 
   tags {
     project = "${var.projectname}"
-    instance = "${var.instance}"
     environment = "${var.environment}"
   }
 }
