@@ -12,7 +12,7 @@ variable "environment" {
   default = "dev"
 }
 
-variable "application_volume_sa_replication_type"  {
+/*variable "application_volume_sa_replication_type"  {
   description = "set replication type for the Storage Account"
   type = "string"
   default = "LRS"
@@ -22,7 +22,7 @@ variable "application_volume_sa_tier"  {
   description = "Set the Storage Tier e.g. to Standard or Premium"
   type = "string"
   default = "Standard"
-}
+}*/
 
 variable "location"  {
   description = "set Azure Location e.g. eastus or westeurope"
@@ -52,5 +52,5 @@ variable "AKS_SSH_ADMIN_KEY" {
 }
 
 variable "agent_count" {
-  default = 1
+  default = 2
 }
