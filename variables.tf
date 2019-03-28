@@ -52,5 +52,5 @@ variable "AKS_SSH_ADMIN_KEY" {
 }
 
 variable "agent_count" {
-  default = 1
+  default = 2
 }
